@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Online Book Store DataBase</title>
+    <link rel="stylesheet" href='/static/style.css' />
+</head>
+<body>
+    <header>
+        <h1>Online Book Store Database</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="/insert">Insert</a>
+            </li>
+            <li>
+                <a href="/select">Select</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Team Members</h1>
+    {% for member in team %}
+        <p> ⁕ {{ member }}</p>
+    {% endfor %}
+
+</body>
+</html>

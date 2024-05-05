@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Online Book Store DataBase</title>
+</head>
+<link rel="stylesheet" href='/static/style.css' />
+<body>
+    <header>
+        <h1>Online Book Store Database</h1>
+    </header>
+    <nav>
+    <ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="/insert">Insert</a>
+        </li>
+    </ul>
+    </nav>
+        <c>
+            <table id="namesTable" border="1">
+                <tr>
+                    {% for header in headers %}
+                    <th> {{ header }}</th>
+                    {% endfor %}
+                </tr>
+                {% for row in rownames %}
+                <tr>
+                    {% for i in row %}
+                        <td>{{ i }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table><br><br>
+        </c>
+</body>
+</html>
